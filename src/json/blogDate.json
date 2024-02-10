@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScriptの最新トレンド",
+    "date": "2023-01-01",
+    "author": "山田太郎",
+    "content": "JavaScriptの世界は常に進化しています。今年のトレンドについて詳しく解説します。",
+    "tags": ["JavaScript", "プログラミング", "トレンド"]
+  },
+  {
+    "id": 2,
+    "title": "ReactとNext.jsの比較",
+    "date": "2023-01-15",
+    "author": "鈴木花子",
+    "content": "ReactとNext.jsはどのように異なるのか、またどのように一緒に使うことができるのかについて説明します。",
+    "tags": ["React", "Next.js", "フレームワーク"]
+  },
+  {
+    "id": 3,
+    "title": "TypeScriptの基本",
+    "date": "2023-02-01",
+    "author": "佐藤健",
+    "content": "TypeScriptを使い始めるための基本的なガイドです。型システムの利点についても触れます。",
+    "tags": ["TypeScript", "JavaScript", "プログラミング"]
+  }
+]
