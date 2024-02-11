@@ -20,3 +20,14 @@ my-next-app/
 ├── package.json             # プロジェクトのメタデータや依存関係、スクリプトを定義するファイル。
 └── README.md                # プロジェクトの説明やセットアップ方法などを記述するファイル。
 ```
+
+## shadcn install
+
+- npm install shadcn-ui@0.8.0
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+
+- @tailwind base;
+- @tailwind components;
+- @tailwind utilities;
+- npx shadcn-ui init
