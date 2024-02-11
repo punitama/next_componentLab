@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ディレクトリ構成
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+my-next-app/
+├── public/                  # 静的ファイルを格納するディレクトリ。画像やファビコンなど。
+│   ├── favicon.ico          # ウェブサイトのファビコン。
+│   └── images/              # ウェブサイトで使用する画像ファイル。
+├── src/                     # ソースコードを格納するディレクトリ（オプションで、構造を整理するために使用）。
+│   ├── components/          # 再利用可能なコンポーネントを格納するディレクトリ。
+│   │   ├── layout/          # サイト全体のレイアウトを扱うコンポーネント（例: ヘッダー、フッター）。
+│   │   └── ui/              # UI関連の小さなコンポーネント（例: ボタン、カード）。
+│   ├── pages/               # ページコンポーネントとAPIルート。ファイル名に基づいてルーティングが自動で設定されます。
+│   │   ├── api/             # APIルートを格納するディレクトリ。サーバーサイドのロジックやデータベースの操作など。
+│   │   ├── _app.js          # メインアプリケーションコンポーネント。ページ間で共有されるトップレベルのコンポーネント。
+│   │   └── index.js         # ホームページのコンポーネント。
+│   ├── styles/              # スタイルシートを格納するディレクトリ。グローバルスタイルやCSSモジュール。
+│   └── utils/               # ユーティリティ関数や共通のヘルパー関数を格納するディレクトリ。
+├── .gitignore               # Gitバージョン管理から除外するファイルやディレクトリを指定するファイル。
+├── next.config.js           # Next.jsのカスタム設定を行うファイル。
+├── package.json             # プロジェクトのメタデータや依存関係、スクリプトを定義するファイル。
+└── README.md                # プロジェクトの説明やセットアップ方法などを記述するファイル。
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## shadcn install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- npm install shadcn-ui@0.8.0
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- @tailwind base;
+- @tailwind components;
+- @tailwind utilities;
+- npx shadcn-ui init
+- globals.cssのファイルパスを修正
