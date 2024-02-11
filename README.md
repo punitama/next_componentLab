@@ -31,3 +31,4 @@ my-next-app/
 - @tailwind components;
 - @tailwind utilities;
 - npx shadcn-ui init
+- globals.cssのファイルパスを修正
